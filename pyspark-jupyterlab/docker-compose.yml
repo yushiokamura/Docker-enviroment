@@ -1,0 +1,13 @@
+
+version: '3'
+services:
+        pysparklab:
+                build:
+                        context:  .
+                        dockerfile: Dockerfile
+                container_name: pysparklab
+                ports: 
+                        - "8000:8888"
+                volumes: 
+                        - .:/home
+                
